@@ -1,0 +1,36 @@
+---
+siteName: BRAIN FOOD
+---
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{siteName}} | {{ title }}</title>
+  <link rel="stylesheet" href="{{ '/css/style.css' | url }}">
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+  <header>
+    <div class="nav-container">
+        <!-- add site wide header content here -->
+        {% include "nav.njk" %}
+    </div>
+  </header>
+
+  <main class="d-home">
+  {{ content | safe }}
+  </main>
+  <footer class="proj-contribute">
+    <div class = "names">
+      <!--<p>&copy; {{ pkg.author }}</p>-->
+      <h5>Anastasiia Haioshko</h5>
+      <h5>Kellie Ortiz</h5>
+      <h5>Malachi Samuels</h5>
+    </div>
+  </footer>
+
+  <script src="/js/main.js"></script>
+</body>
+</html>

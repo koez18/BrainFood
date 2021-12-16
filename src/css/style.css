@@ -1,0 +1,451 @@
+/*Fonts Import*/
+@import url('https://fonts.googleapis.com/css2?family=Major+Mono+Display&family=Montserrat&display=swap');
+
+/*ALL IMAGES STYLE*/
+/* ================= Use Border Box model ================= */
+html {
+    box-sizing: border-box;
+  }
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+  
+  /* ================= Basic Responsive Images and Video ================= */
+  img,video{
+    width: auto;
+    height: auto;
+    max-width: 100%;
+  }
+
+/*NAV*/
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+p,h3,h4,h4{
+    color: #3D405B;
+}
+body{
+    background-color: #F4F1DE;
+}
+
+#d-home{
+    background-color: #F4F1DE;
+}
+.nav-container{
+    width: 100%;
+    background-color: #E07A5F;
+}
+.navbar{
+    display: grid;
+    grid-template-columns: 0.2fr auto 1fr;
+    align-items: center;
+    height: 80px;
+    width: 90%;
+    max-width: 1720px;
+    margin: 0 auto;
+}
+#navbar-logo{
+    color: white;
+    justify-self: start;
+    margin-left: 20px;
+    font-family: 'Major Mono Display', monospace;
+    text-transform: uppercase;
+    cursor: pointer;
+    font-size: 1.3em;
+}
+.nav-menu{
+    display:grid;
+    grid-template-columns: repeat(5,auto);
+    list-style: none;
+    text-align: center;
+    width: 70%;
+    justify-self: end;
+}
+.nav-links{
+    color: white;
+    text-decoration: none;
+}
+.menu-toggle .bar{
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    transition: all 0.3s ease-in-out;
+    background-color: white;
+}
+.nav-menu a{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 1.3em;
+}
+#logo-link{
+    text-decoration: none;
+}
+/*HOME*/
+.about{
+    padding: 15px;
+    text-align: center;
+}
+.about p{
+    padding: 15px;
+}
+
+button > a{
+    color: #3D405B;
+    text-decoration: none;
+    padding: 20px;
+    font-weight: bold;
+}
+.btn-space{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 15px;
+    padding-top: 15px;
+}
+.btn-one{
+    background-color: #F2CC8F;
+    border-radius: 4px;
+}
+.btn-two{
+    background-color: #81B29A;
+    border-radius: 4px;
+}
+.btn-three{
+    background-color: #E07A5F;
+    border-radius: 4px;
+}
+.btn-four{
+    background-color: #F4F1DE;
+    border-radius: 4px;
+}
+.btn-one, .btn-two, .btn-three, .btn-four{
+    color: #3D405B; 
+    border-radius: 4px;
+    padding: 10px;
+}
+#tiles{
+  padding-bottom: 15px;
+  padding-left: 15px;
+  padding-right: 15px;
+  display:grid;
+  grid-auto-rows: minmax(300px, auto); 
+}
+.credit-link{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+.credit-wiki{
+    text-decoration: none;
+    color: #3D405B;
+    font-weight: bold;
+}
+.img-cred{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+figure{
+    color: white;
+}
+#tiles p, h4{
+    color:white;
+    text-align: center;
+    padding: 10px;
+}
+#tiles p{
+    padding-bottom: 20px;
+}
+#tiles h4{
+    font-weight: bold;
+}
+#food-tile-india{
+    background-color: #3D405B;
+    padding-bottom:20px;
+}
+#img-tile-india{
+  background-image: url(https://images.unsplash.com/photo-1524492412937-b28074a5d7da?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1171&q=80);
+/*   min-height: 400px; */
+}
+#food-tile-italy{
+    background-color: #F2CC8F;
+    padding-bottom: 20px;
+}
+#img-tile-italy{
+    background-image: url(https://images.unsplash.com/photo-1529260830199-42c24126f198?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1176&q=80);
+}
+#food-tile-china{
+    background-color: #81B29A;
+    padding-bottom: 20px;
+}
+#img-tile-china{
+    background-image: url(https://images.unsplash.com/photo-1566455123644-5c94561acf9b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=880&q=80);
+}
+#food-tile-mexico{
+    background-color: #E07A5F;
+    padding-bottom: 20px;
+}
+#img-tile-mexico{
+    background-image: url(https://images.unsplash.com/photo-1512813195386-6cf811ad3542?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80);
+}
+
+/*FOOTER*/
+.proj-contribute{
+    background-color: #E07A5F;
+}
+.proj-contribute h5{
+    color: white;
+    text-align: center;
+    font-size: 1.2em;
+}
+.names{
+    padding:20px;
+}
+
+/*SEPARATE TILE PAGES*/
+.d-tile{
+    background-color: #F4F1DE;
+    padding-bottom: 100px;
+  
+}
+.about p{
+    color:  #3D405B;
+}
+.t-intro{
+  padding-bottom: 15px;
+  padding-left: 15px;
+  padding-right: 15px;
+  display:grid;
+  grid-auto-rows: minmax(300px, auto);
+}
+.cuisine-intro{
+    text-decoration: none;
+    color: #3D405B;
+    font-weight: bold;
+}
+.recipe{
+    display: flex;
+}
+.recipe-link{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+.rec-contain{
+    padding-bottom: 100px;
+}
+.ingredients li{
+    list-style: none;
+}
+.ingredients p{
+    width: 200px;
+}
+.ingredient-container h3{
+    color: white;
+    text-align: center;
+    padding-bottom: 15px;
+}
+.instruction-container{
+    padding-left: 50px;
+}
+.instruction-container h3{
+    color: white;
+    text-align: center;
+    padding-bottom: 15px;
+}
+.instructions li{
+    color: white;
+}
+
+
+
+    
+/*CHINA*/
+.food-tile-two-china h1, p{
+    color: white;
+    text-align: center;
+    padding-bottom: 15px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.food-tile-two-china{
+    background-color: #3D405B;
+}
+.img-tile-two-china{
+    background: no-repeat;
+}
+.img-layer-blue{
+background-color: #3D405B;
+}
+.img-layer-yell{
+    background-color: #F2CC8F;
+}
+.more-info{
+    padding-top: 50px;
+    padding-bottom: 50px;
+    padding-left: 15px;
+    padding-right: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#info-text-china p{
+    color: white;
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-color: #F2CC8F;
+}
+#info-text-china{
+    width: 50%;
+}
+/*INDIA*/
+.food-tile-two-india h1, p{
+    color: white;
+    text-align: center;
+    padding-bottom: 15px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.food-tile-two-india{
+    background-color: #F2CC8F; 
+}
+.img-tile-two-india{
+    background: no-repeat;
+}
+
+#info-text-india{
+    width: 50%;
+}
+#info-text-india p{
+    color: white;
+    text-align: center;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 15px;
+    background-color: #81B29A;
+}
+/*ITALY*/
+.food-tile-two-italy h1, p{
+    color: white;
+    text-align: center;
+    padding-bottom: 15px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.food-tile-two-italy{
+    background-color: #F2CC8F; 
+}
+.img-tile-two-italy{
+    background: no-repeat;
+}
+
+#info-text-italy{
+    width: 50%;
+}
+#info-text-italy p{
+    color: white;
+    text-align: center;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 15px;
+    background-color: #81B29A;
+}
+/*MEXICO*/
+.food-tile-two-mex h1, p{
+    color: white;
+    text-align: center;
+    padding-bottom: 15px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.food-tile-two-mex{
+    background-color: #3D405B;
+}
+.img-tile-two-mex{
+    background: no-repeat;
+}
+#info-text-mex p{
+    color: white;
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-color: #F2CC8F;
+}
+#info-text-mex{
+    width: 50%;
+}
+
+
+@media screen and (min-width: 800px){
+    #tiles{
+      grid-template-columns: repeat(2,1fr );
+    }
+    .t-intro{
+      grid-template-columns: repeat(2,1fr );
+    }
+  }
+
+/*MOBILE*/
+@media screen and (max-width: 768px){
+/*NAV*/
+    .nav-container{
+        position: relative;
+    }
+    .nav-menu{
+        display: grid;
+        grid-template-columns: auto;
+        background: #E07A5F;
+        margin: 0;
+        width: 100%;
+        position: absolute;
+        top: 80px;
+        left: -100%;
+        opacity: 0;
+        transition: all 0.5s ease;
+    }
+    #navbar-logo{
+        margin-left: 20px;
+    }
+    .nav-menu.active{
+        background: #E07A5F;
+        left: 0;
+        opacity: 1;
+        transition: all 0.5s ease;
+    }
+    .nav-links{
+        text-align: center;
+        line-height: 20px;
+        width: 100px;
+        display: table;
+    }
+    .navbar{
+      width: 100%  
+    }
+    #mobile-menu{
+        position: absolute;
+        top: 20%;
+        right: 5%;
+        transform: translate(5%, 20%);
+    }
+    .menu-toggle .bar{
+        display: block;
+        cursor: pointer;
+    }
+    .menu-toggle:hover{
+        cursor: pointer;
+    }
+    #mobile-menu.is-active .bar:nth-child(2){
+        opacity: 0;
+    }
+    #mobile-menu.is-active .bar:nth-child(1){
+        transform: translateY(8px) rotate(45deg);
+    }
+    #mobile-menu.is-active .bar:nth-child(3){
+        transform: translateY(-8px) rotate(-45deg);
+    } 
+}
